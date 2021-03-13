@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : PlainLeaf 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=big5"> 
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; 
+}
+
+/* Next & previous buttons */
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 90%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left:190%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding-left: 30px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+</style>
+
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header" class="container">
+  <div id="logo">
+    <h1><a href="#">小草協會</a></h1>
+  </div>
+  <div id="menu">
+  <ul>
+  <li><a href="#home">主頁</a></li>
+  <!-- <li><a href="#news">News</a></li> -->
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">關於協會</a>
+    <div class="dropdown-content">
+      <a href="#">協會歷程</a>
+      <a href="#">理事長的話</a>
+      <a href="#">組織架構</a>
+      <a href="#">服務內容</a>
+      <a href="#">協會會歌</a>
+    </div>
+  </li>
+  <li><a href="#" accesskey="5" title="">活動花絮</a></li>
+  <li><a href="#" accesskey="5" title="">聯絡我們</a></li>
+</ul></div>
+<div id="banner"></div>
+<div id="part">
+      <h1 style="font-size: 35px">活動寫真</h1><br>
+</div>
+  <div style="text-align: right;">
+  <select onChange="location = this.options[this.selectedIndex].value;">
+      <option value="#">請選擇</option>
+      <option value="活動花絮(相片專區).html">相片專區</option>
+      <option value="活動花絮(相片專區).html">☟☟☟☟☟☟☟☟☟☟☟☟☟☟☟</option>
+      <option value="活動花絮(行政管理).html">✔行政管理(8)</option>
+      <option value="活動花絮(課程研習).html">✔課程研習(40)</option>
+      <option value="活動花絮(活動寫真).html">✔活動寫真(58)</option>
+      <option value="活動花絮(我的精采生活).html">✔我的精采生活(5)</option>
+
+      <option value="活動花絮(相片專區).html">----------------</option>
+      <option value="活動花絮(影音專區).html">影音專區</option>
+      <option value="活動花絮(影音專區).html"></option>
+    </select>
+  </div><br>
+
+<h2>小草執行長簡報中</h2>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//69_DSCN1308.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//69_DSCN1308.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//70_DSCN1309.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//70_DSCN1309.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//71_DSCN1310.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//71_DSCN1310.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//72_DSCN1311.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//72_DSCN1311.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//73_DSCN1312.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//73_DSCN1312.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//74_DSCN1313.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//74_DSCN1313.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//75_DSCN1314.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//75_DSCN1314.jpg"" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//76_DSCN1315.jpg"">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//76_DSCN1315.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//77_DSCN1316.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//77_DSCN1316.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//78_DSCN1317.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//78_DSCN1317.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//79_DSCN1318.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//79_DSCN1318.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//80_DSCN1319.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//80_DSCN1319.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//81_DSCN1320.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//81_DSCN1320.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//82_DSCN1321.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//82_DSCN1321.jpg" alt="grasscare" style="width:150px">
+</a>
+
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//84_DSCN1323.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//84_DSCN1323.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//85_DSCN1324.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//85_DSCN1324.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//86_DSCN1325.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//86_DSCN1325.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//87_DSCN1326.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//87_DSCN1326.jpg" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//88_DSCN1327.jpg">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//88_DSCN1327.jpg" alt="grasscare" style="width:150px">
+</a><br>
+<h2>中原扶輪社友人來訪</h2>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//109_DSCN8512.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//109_DSCN8512.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//110_DSCN8513.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//110_DSCN8513.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//111_DSCN8508.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//111_DSCN8508.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//112_DSCN8512.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//112_DSCN8512.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//113_DSCN8518.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//113_DSCN8518.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//114_DSCN8526.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//114_DSCN8526.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//119_DSCN8430.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//119_DSCN8430.JPG" alt="grasscare" style="width:150px">
+</a><br>
+<h2>義賣活動</h2>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//120_DSCN8452.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//120_DSCN8452.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//121_DSCN8503.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//121_DSCN8503.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//44_DSCN8302.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//44_DSCN8302.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//45_DSCN8303.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//45_DSCN8303.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//46_DSCN8304.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//46_DSCN8304.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//47_DSCN8305.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//47_DSCN8305.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//122_DSCN8598上.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//122_DSCN8598上.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//124_DSCN8590%E4%B8%8A.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//124_DSCN8590%E4%B8%8A.JPG" alt="grasscare" style="width:150px">
+</a><br>
+<h2>青少年歡樂共學營</h2>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//137_2.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//137_2.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//146_1.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//146_1.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//147_2.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//147_2.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//148_3.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//148_3.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//149_4.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//149_4.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//150_6.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//150_6.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//152_3.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//152_3.JPG" alt="grasscare" style="width:150px">
+</a><br>
+<h2>1041017青少年戶外探索體驗營</h2>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//155_4.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//155_4.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//156_7.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//156_7.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//157_8.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//157_8.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//158_5.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//158_5.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//159_9.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//159_9.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//160_1.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//160_1.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//161_6.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//161_6.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//162_1.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//162_1.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//163_2.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//163_2.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//164_3.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//164_3.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//165_4.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//165_4.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//166_6.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//166_6.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//167_7.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//167_7.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//168_8.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//168_8.JPG" alt="grasscare" style="width:150px">
+</a><br>
+<h2>1041101實物銀行宣導活動</h2>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//169_1.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//169_1.JPG" alt="grasscare" style="width:150px">
+</a>
+<a target="_blank"  href="http://grasscare.org.tw/uploads/tadgallery//172_3.JPG">
+  <img src="http://grasscare.org.tw/uploads/tadgallery//172_3.JPG" alt="grasscare" style="width:150px">
+</a>
+
+
+
+
+
+</div>
+<div id="featured" class="container">
+  <div class="align-left">
+     <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/10629760_680078872069785_2639857215126535916_n.png?oh=1b8197a122d939af531e97a7034c8046&oe=5AA8A280" style="width: 384px; height: 350px;"> 
+    <!-- <span class="fa fa-pagelines"></span> -->  
+  </div>
+  <div class="align-right">
+    <p style="font-weight: 600; font-size: 40pt; font-family:'cwTeXYen', sans-serif; color:#59b300;"><br>不要覺得自己走的慢，
+    <br>至少比不想前進的人快一些。</p> 
+    <!-- <a href="#" class="button"></a> -->
+  </div>
+</div>
+<!-- <div id="copyright" class="container">
+  <p></p>
+</div> -->
+</body>
+</html>
+
+
+
+
+
+
+     
